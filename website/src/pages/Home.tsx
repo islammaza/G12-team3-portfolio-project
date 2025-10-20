@@ -55,7 +55,10 @@ const Home = () => {
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+          <div
+            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "1s" }}
+          ></div>
         </div>
 
         {/* Hero Content */}
@@ -65,27 +68,39 @@ const Home = () => {
               <Sparkles className="h-4 w-4 text-secondary" />
               <span className="text-sm font-medium">Welcome to Our Team</span>
             </div>
-            
+
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
               <span className="gradient-text">Innovative</span>
               <br />
               <span className="text-foreground">Developers</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We are a passionate team of developers dedicated to creating exceptional digital experiences
-              and innovative solutions that make a difference.
+              We are a passionate team of developers dedicated to creating
+              exceptional digital experiences and innovative solutions that make
+              a difference.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 pt-8">
               <a href="#team">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-lg hover-lift">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-lg hover-lift"
+                >
                   Meet the Team
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="glass text-lg px-8 py-6 rounded-full hover-lift">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="glass text-lg px-8 py-6 rounded-full hover-lift"
+                >
                   <Github className="mr-2 h-5 w-5" />
                   View GitHub
                 </Button>
@@ -123,7 +138,7 @@ const Home = () => {
               >
                 {/* Floating element */}
                 <div className="absolute -top-2 -right-2 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-float"></div>
-                
+
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent z-10"></div>
                   <img
@@ -132,24 +147,48 @@ const Home = () => {
                     className="w-full aspect-square object-cover transition-transform duration-500"
                   />
                 </div>
-                
+
                 <div className="p-4 space-y-3">
                   <div>
-                    <h3 className="text-lg font-bold mb-1">{member.name}</h3>
-                    <p className="text-secondary font-semibold text-sm">{member.role}</p>
+                    <h3
+                      className={`font-bold mb-1 ${
+                        member.name.length > 20 ? "text-xs" : "text-base"
+                      } whitespace-nowrap`}
+                      title={member.name}
+                    >
+                      {member.name}
+                    </h3>
+                    <p className="text-secondary font-semibold text-sm">
+                      {member.role}
+                    </p>
                   </div>
-                  
-                  <p className="text-muted-foreground text-xs line-clamp-2">{member.bio}</p>
+
+                  <p className="text-muted-foreground text-xs line-clamp-2">
+                    {member.bio}
+                  </p>
 
                   <div className="flex flex-col gap-2 pt-2">
                     <Link to={`/portfolio/${member.id}`} className="w-full">
-                      <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 w-full">
+                      <Button
+                        variant="default"
+                        size="sm"
+                        className="bg-primary hover:bg-primary/90 w-full"
+                      >
                         Portfolio
                         <ArrowRight className="ml-2 h-3 w-3" />
                       </Button>
                     </Link>
-                    <a href={member.github} target="_blank" rel="noopener noreferrer" className="w-full">
-                      <Button variant="outline" size="sm" className="glass w-full">
+                    <a
+                      href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
+                    >
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="glass w-full"
+                      >
                         <Github className="h-3 w-3 mr-2" />
                         GitHub
                       </Button>
@@ -168,23 +207,37 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold gradient-text mb-2">Our Team</h3>
-              <p className="text-muted-foreground">Building the future, one line of code at a time</p>
+              <p className="text-muted-foreground">
+                Building the future, one line of code at a time
+              </p>
             </div>
-            
+
             <div className="flex gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon" className="glass hover-lift">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="glass hover-lift"
+                >
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
               <a href="mailto:team@example.com">
-                <Button variant="outline" size="icon" className="glass hover-lift">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="glass hover-lift"
+                >
                   <Mail className="h-5 w-5" />
                 </Button>
               </a>
             </div>
           </div>
-          
+
           <div className="text-center mt-8 pt-8 border-t border-border/50">
             <p className="text-sm text-muted-foreground">
               © 2025 Team Portfolio. All rights reserved.
