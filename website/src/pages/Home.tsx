@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
+import SouhaImage from "@/assets/souha.jpg";
 
 // Team members data - add more members here
 const teamMembers = [
@@ -24,10 +25,10 @@ const teamMembers = [
   {
     id: "souha-bensimessaoud",
     name: "Souha Bensimessaoud",
-    role: "Backend Developer",
-    image: "",
-    bio: "Building robust and efficient backend systems",
-    github: "",
+    role: "ENSIA Student",
+    image: SouhaImage,
+    bio: "I'm a third-year Artificial Intelligence student at -ENSIA-",
+    github: "https://github.com/bensimessaoudsouha",
   },
   {
     id: "salsabil-laib",
