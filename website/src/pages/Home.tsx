@@ -32,10 +32,10 @@ const teamMembers = [
   {
     id: "salsabil-laib",
     name: "Salsabil Laib",
-    role: "UI/UX Designer",
+    role: "Developer and  Designer",
     image: "",
-    bio: "Designing delightful digital experiences",
-    github: "",
+    bio: "Fun of coding, designing,mathematics and problem-solving",
+    github: "https://github.com/Salsabillaib",
   },
   {
     id: "ryme-ait-belkacem",
