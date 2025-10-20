@@ -2,6 +2,9 @@ import { useParams, Link } from "react-router-dom";
 import { Github, Mail, Linkedin, ArrowLeft, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
+
 
 // This is the template portfolio page with dummy data
 const portfolioData = {
@@ -132,7 +135,7 @@ const portfolioData = {
     name: "Salsabil Laib",
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    image: slsImg,
     skills: [
       "React.js",
       "Node.js",
@@ -171,46 +174,44 @@ const portfolioData = {
   },
   "ryme-ait-belkacem": {
     name: "Ryme Ait Belkacem",
-    role: "Full Stack Developer",
-    bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    role: " 3rd year AI Student",
+    bio: "Passionate of AI , development ,robotics. Fun of creating intelligent systems that connect technology and real-world applications, and I am always exploring new ways to learn, build, and solve challenges through code and automation",
+    image: rymeImg,
+    
+
     skills: [
       "React.js",
       "Node.js",
-      "TypeScript",
+      "JavaScript",
       "Python",
-      "MongoDB",
+      "SQL",
       "PostgreSQL",
-      "Docker",
-      "AWS",
-      "Git",
-      "REST APIs",
+      "PHP",
+      "Supabase",
+      "C++",
+      "Scada ",
+      
+
     ],
-    github: "",
-    email: "",
-    linkedin: "",
+    github: "https://github.com/Ryme-ab",
+    email: "mailto:ryme.aitbelkacem@ensia.edu.dz",
     projects: [
       {
-        title: "E-Commerce Platform",
+        title: "JAWADY Platform",
         description:
-          "Built a full-stack e-commerce solution with payment integration",
-        tech: ["React", "Node.js", "Stripe"],
+          "Built a full-stack e-commerce solution for algerian market , the first and the only one in the country",
+        tech: ["React", "TypeScript", "PHP","JavaScript"],
       },
       {
-        title: "Task Management App",
+        title: "Warehouse Managment System",
         description:
-          "Collaborative task management tool with real-time updates",
-        tech: ["Vue.js", "Firebase", "Tailwind CSS"],
+          "desktop application for managing a warehouse stock using AI (ai algorithms for search ) ",
+        tech: ["supabase","react","python", "Tailwind CSS"],
       },
-      {
-        title: "Weather Dashboard",
-        description:
-          "Interactive weather forecasting application with data visualization",
-        tech: ["React", "Chart.js", "OpenWeather API"],
-      },
+    
     ],
   },
-  // Add more team members here - this serves as the template
+  
 };
 
 const Portfolio = () => {

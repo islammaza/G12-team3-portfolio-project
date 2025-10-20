@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
-
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
 // Team members data - add more members here
 const teamMembers = [
   {
@@ -33,17 +34,17 @@ const teamMembers = [
     id: "salsabil-laib",
     name: "Salsabil Laib",
     role: "UI/UX Designer",
-    image: "",
+    image: slsImg,
     bio: "Designing delightful digital experiences",
     github: "",
   },
   {
     id: "ryme-ait-belkacem",
     name: "Ryme Ait Belkacem",
-    role: "DevOps Engineer",
-    image: "",
-    bio: "Automating and optimizing deployment pipelines",
-    github: "",
+    role: "Developer",
+    image: rymeImg,
+    bio: "Automation,Ai,Robotics and engineering",
+    github: "https://github.com/Ryme-ab",
   },
 ];
 
