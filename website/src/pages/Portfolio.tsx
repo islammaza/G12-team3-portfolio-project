@@ -6,7 +6,7 @@ import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
 
 
-// This is the template portfolio page with dummy data
+
 const portfolioData = {
   "islam-maza": {
     name: "Islam Maza",
@@ -248,15 +248,14 @@ const Portfolio = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-        {/* Floating background elements */}
+   
         <div className="absolute top-20 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Profile Image */}
+     
             <div className="animate-fade-in flex justify-center md:justify-start">
               <div className="relative group w-80">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity animate-glow"></div>
@@ -265,12 +264,12 @@ const Portfolio = () => {
                   alt={member.name}
                   className="relative w-full aspect-square object-cover rounded-3xl shadow-2xl"
                 />
-                {/* Floating accent */}
+               
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/30 rounded-full blur-2xl animate-float"></div>
               </div>
             </div>
 
-            {/* Profile Info */}
+          
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div>
                 <h1 className="text-5xl font-bold mb-3 gradient-text">{member.name}</h1>
@@ -281,7 +280,6 @@ const Portfolio = () => {
                 {member.bio}
               </p>
 
-              {/* Social Links */}
               <div className="flex gap-4 pt-4">
                 <a href={member.github} target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="glass hover-lift">
@@ -304,9 +302,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      
       <section className="py-20 px-6 relative">
-        {/* Floating elements */}
+      
         <div className="absolute top-1/3 left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '0.5s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
@@ -328,9 +326,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+    
       <section className="py-20 px-6 relative">
-        {/* Floating elements */}
+       
         <div className="absolute bottom-1/4 right-20 w-48 h-48 bg-secondary/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
@@ -360,7 +358,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
