@@ -1,0 +1,8 @@
+[33m79aa851[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/implement-islam-maza-profile[m[33m, [m[1;31morigin/feature/implement-islam-maza-profile[m[33m)[m chore: revert accidental update of package-lock.json
+[33me87f66d[m docs: Update team leader's GitHub username
+[33mfd7e02d[m Update package-lock.json
+[33m6e7c3aa[m feat: Initial project setup with UI and Tailwind
+[33m734bdfb[m chore: Initialize React + TypeScript + Vite project
+[33mb95532b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/feature/implement-souha-bensimessaoud-profile[m[33m, [m[1;31morigin/feature/implement-salsabil-laib-profile[m[33m, [m[1;31morigin/feature/implement-ryme-ait-belkacem-profile[m[33m, [m[1;31morigin/feature/implement-alia-tliba-profile[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mfeature/implement-salsabil-laib-profile[m[33m, [m[1;32mdevelop[m[33m)[m docs: Update README format and team member section
+[33m1bc9df4[m docs: Update README with team members information
+[33m1815b10[m Initial commit
