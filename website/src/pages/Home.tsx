@@ -16,10 +16,10 @@ const teamMembers = [
   {
     id: "alia-tliba",
     name: "Alia Tliba",
-    role: "Frontend Developer",
+    role: "AI Engineering Student",
     image: "",
-    bio: "Creating beautiful and intuitive user experiences",
-    github: "",
+    bio: "Passionate about AI and web development, creating smart and dynamic digital experiences.",
+    github: "https://github.com/aliatliba",
   },
   {
     id: "souha-bensimessaoud",
