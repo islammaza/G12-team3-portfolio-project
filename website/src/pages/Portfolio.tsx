@@ -3,7 +3,6 @@ import { Github, Mail, Linkedin, ArrowLeft, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
-import SouhaImage from "@/assets/souha.jpg";
 import islamImg from "../assets/images/islam.jpg";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
@@ -14,7 +13,6 @@ const portfolioData = {
     role: "AI Engineering Student",
     bio: "I'm an AI Engineering and Data Science student passionate about building intelligent systems that solve real-world problems. My interests include machine learning, data-driven decision-making, and AI product development. I enjoy turning complex data into actionable insights and developing scalable AI solutions that make an impact.",
     image: islamImg,
-<<<<<<< Updated upstream
     skills: [
       "PYTHON",
       "C/C++",
@@ -61,56 +59,39 @@ const portfolioData = {
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
     image: "",
-=======
->>>>>>> Stashed changes
     skills: [
-      "PYTHON",
-      "C/C++",
-      "HTML",
-      "CSS",
-      "JAVASCRIPT",
-      "PHP",
-      "SQL",
-      "JAVA",
-      "LINUX",
-      "Git",
-      "DJANGO",
       "React.js",
-      "Problem Solving",
-      "DSA",
-      "OOP",
+      "Node.js",
+      "TypeScript",
+      "Python",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+      "Git",
+      "REST APIs",
     ],
-    github: "https://github.com/islammaza",
-    email: "mailto:islam.maza@ensia.edu.dz",
-    linkedin: "https://www.linkedin.com/in/islam-maza-4a0346358/",
+    github: "",
+    email: "",
+    linkedin: "",
     projects: [
       {
-        title: "AI-Powered Job Matching System",
+        title: "E-Commerce Platform",
         description:
-<<<<<<< Updated upstream
           "Built a full-stack AI powered workout planner and tracker .",
         tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
-=======
-          "Built an intelligent job matching system leveraging search algorithms to connect job seekers with suitable positions.",
-        tech: ["Python", "Flask", "React"],
->>>>>>> Stashed changes
       },
       {
-        title: "Craftsmen Marketplace Website",
+        title: "Task Management App",
         description:
-<<<<<<< Updated upstream
           "Built a full-stack website for managing appointments and save patients records.",
         tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven", "PHP"],
-=======
-          "Collaborative marketplace to showcase crafts and buy them which foster an online community of artisans.",
-        tech: ["HTML", "CSS", "JAVASCRIPT", "PHP"],
->>>>>>> Stashed changes
       },
       {
-        title: "Note Management Website",
+        title: "Weather Dashboard",
         description:
-          "A simple website designed to create and organise user's notes. You can also update and delete them.",
-        tech: ["React.js", "Django", "RestAPI"],
+          "Interactive weather forecasting application with data visualization",
+        tech: ["React", "Chart.js", "OpenWeather API"],
       },
     ],
   },
@@ -136,61 +117,7 @@ const portfolioData = {
     linkedin: "",
     projects: [
       {
-<<<<<<< Updated upstream
         title: "E-Commerce Platform",
-=======
-        title: "TrainTailor : Intelligent Workout Planner",
-        description:
-          "Built a full-stack AI powered workout planner and tracker .",
-        tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
-      },
-      {
-        title: "Medicosphere : Private Clinic Management Website",
-        description:
-          "Built a full-stack website for managing appointments and save patients records.",
-        tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven", "PHP"],
-      },
-      {
-        title: "RecipeHub : a UI/UX Design for recipe & tips sharing Website",
-        description:
-          "Interactive UI/UX Design & Prototype for recipe & kitchen tips sharing website.",
-        tech: ["UI/UX", "Figma"],
-      },
-    ],
-  },
-  "souha-bensimessaoud": {
-    name: "Souha Bensimessaoud",
-    role: "Full Stack Developer",
-    bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
-    skills: [
-      "React.js",
-      "Node.js",
-      "TypeScript",
-      "Flask",
-      "C++",
-      "Python",
-      "OracleDB",
-      "PostgreSQL",
-      "MySQL",
-      "AI & Machine Learning",
-      "Linux",
-      "Capture The Flag",
-      "Hack The Box",
-      "Git & GitHub",
-      "Data Mining",
-      "Communication",
-      "Leadership",
-      "Problem Solving",
-      "UI/UX Design",
-    ],
-    github: "https://github.com/bensimessaoudsouha",
-    email: "souha.bensimessaoud@ensia.edu.dz",
-    linkedin: "https://www.linkedin.com/in/souha-bensimessaoud-5bb256320/",
-    projects: [
-      {
-        title: "VisiFun – Smart Web Application for Jardin d’Essai'",
->>>>>>> Stashed changes
         description:
           "Built a responsive website to provide unguided visitors with plant information via interactive maps, gamified quizzes, and AI-based plant search, improving visitor experience by 30%.",
         tech: ["React", "Node.js", "MySQL", "Leaflet.js", "Flask", "Figma"],
