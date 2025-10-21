@@ -162,8 +162,7 @@ const portfolioData = {
     name: "Souha Bensimessaoud",
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    // image: "/assets/souha.jpg",
-    image: SouhaImage,
+    image: "",
     skills: [
       "React.js",
       "Node.js",
