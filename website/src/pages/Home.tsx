@@ -107,7 +107,7 @@ const Home = () => {
                 </Button>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/islammaza/G12-team3-portfolio-project"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -225,7 +225,7 @@ const Home = () => {
 
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/islammaza/G12-team3-portfolio-project"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -237,7 +237,7 @@ const Home = () => {
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
-              <a href="mailto:team@example.com">
+              <a href="mailto:islam.maza@ensia.edu.dz.com">
                 <Button
                   variant="outline"
                   size="icon"
