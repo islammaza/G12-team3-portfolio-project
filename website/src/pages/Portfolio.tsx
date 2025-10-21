@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SouhaImage from "@/assets/souha.jpg";
 
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
 
 
 
-// This is the template portfolio page with dummy data
 const portfolioData = {
   "islam-maza": {
     name: "Islam Maza",
@@ -149,7 +150,7 @@ const portfolioData = {
     name: "Salsabil Laib",
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    image: slsImg,
     skills: [
       "React.js",
       "Node.js",
@@ -188,46 +189,44 @@ const portfolioData = {
   },
   "ryme-ait-belkacem": {
     name: "Ryme Ait Belkacem",
-    role: "Full Stack Developer",
-    bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    role: " 3rd year AI Student",
+    bio: "Passionate of AI , development ,robotics. Fun of creating intelligent systems that connect technology and real-world applications, and I am always exploring new ways to learn, build, and solve challenges through code and automation",
+    image: rymeImg,
+    
+
     skills: [
       "React.js",
       "Node.js",
-      "TypeScript",
+      "JavaScript",
       "Python",
-      "MongoDB",
+      "SQL",
       "PostgreSQL",
-      "Docker",
-      "AWS",
-      "Git",
-      "REST APIs",
+      "PHP",
+      "Supabase",
+      "C++",
+      "Scada ",
+      
+
     ],
-    github: "",
-    email: "",
-    linkedin: "",
+    github: "https://github.com/Ryme-ab",
+    email: "mailto:ryme.aitbelkacem@ensia.edu.dz",
     projects: [
       {
-        title: "E-Commerce Platform",
+        title: "JAWADY Platform",
         description:
-          "Built a full-stack e-commerce solution with payment integration",
-        tech: ["React", "Node.js", "Stripe"],
+          "Built a full-stack e-commerce solution for algerian market , the first and the only one in the country",
+        tech: ["React", "TypeScript", "PHP","JavaScript"],
       },
       {
-        title: "Task Management App",
+        title: "Warehouse Managment System",
         description:
-          "Collaborative task management tool with real-time updates",
-        tech: ["Vue.js", "Firebase", "Tailwind CSS"],
+          "desktop application for managing a warehouse stock using AI (ai algorithms for search ) ",
+        tech: ["supabase","react","python", "Tailwind CSS"],
       },
-      {
-        title: "Weather Dashboard",
-        description:
-          "Interactive weather forecasting application with data visualization",
-        tech: ["React", "Chart.js", "OpenWeather API"],
-      },
+    
     ],
   },
-  // Add more team members here - this serves as the template
+  
 };
 
 const Portfolio = () => {
@@ -264,15 +263,14 @@ const Portfolio = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-        {/* Floating background elements */}
+   
         <div className="absolute top-20 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Profile Image */}
+     
             <div className="animate-fade-in flex justify-center md:justify-start">
               <div className="relative group w-80">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity animate-glow"></div>
@@ -281,12 +279,12 @@ const Portfolio = () => {
                   alt={member.name}
                   className="relative w-full aspect-square object-cover rounded-3xl shadow-2xl"
                 />
-                {/* Floating accent */}
+               
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/30 rounded-full blur-2xl animate-float"></div>
               </div>
             </div>
 
-            {/* Profile Info */}
+          
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div>
                 <h1 className="text-5xl font-bold mb-3 gradient-text">{member.name}</h1>
@@ -297,7 +295,6 @@ const Portfolio = () => {
                 {member.bio}
               </p>
 
-              {/* Social Links */}
               <div className="flex gap-4 pt-4">
                 <a href={member.github} target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="glass hover-lift">
@@ -320,9 +317,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      
       <section className="py-20 px-6 relative">
-        {/* Floating elements */}
+      
         <div className="absolute top-1/3 left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '0.5s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
@@ -344,9 +341,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+    
       <section className="py-20 px-6 relative">
-        {/* Floating elements */}
+       
         <div className="absolute bottom-1/4 right-20 w-48 h-48 bg-secondary/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
         
         <div className="container mx-auto max-w-6xl">
@@ -376,7 +373,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
