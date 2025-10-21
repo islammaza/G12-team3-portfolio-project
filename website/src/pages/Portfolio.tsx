@@ -2,8 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Github, Mail, Linkedin, ArrowLeft, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import SouhaImage from "@/assets/souha.jpg";
-
+import SouhaImage from "../assets/images/souha.jpg";
+import AliaImage from "../assets/images/alia.jpg";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
 
@@ -55,7 +55,7 @@ const portfolioData = {
     name: "Alia Tliba",
     role: "AI Enginnering Student , Web & Mobile Developer",
     bio: "Passionate software & AI engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    image: AliaImage,
     skills: [
       "React.js",
       "Node.js",
@@ -70,6 +70,12 @@ const portfolioData = {
       "Data Mining",
       "Problem Solving",
       "UI/UX Design",
+      "C++",
+      "OOP",
+      "Leadership",
+      "PHP",
+      "Flask",
+
     ],
     github: "https://github.com/aliatliba",
     email: "alia.tliba@ensia.edu.dz",
@@ -99,7 +105,6 @@ const portfolioData = {
     name: "Souha Bensimessaoud",
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    // image: "/assets/souha.jpg",
     image: SouhaImage,
     skills: [
       "React.js",
@@ -121,6 +126,7 @@ const portfolioData = {
       "Leadership",
       "Problem Solving",
       "UI/UX Design",
+      "OOP",
     ],
     github: "https://github.com/bensimessaoudsouha",
     email: "souha.bensimessaoud@ensia.edu.dz",
