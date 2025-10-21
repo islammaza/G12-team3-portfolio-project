@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
 
-// Team members data - add more members here
 const teamMembers = [
   {
     id: "islam-maza",
@@ -33,26 +34,26 @@ const teamMembers = [
     id: "salsabil-laib",
     name: "Salsabil Laib",
     role: "UI/UX Designer",
-    image: "",
+    image: slsImg,
     bio: "Designing delightful digital experiences",
     github: "",
   },
   {
     id: "ryme-ait-belkacem",
     name: "Ryme Ait Belkacem",
-    role: "DevOps Engineer",
-    image: "",
-    bio: "Automating and optimizing deployment pipelines",
-    github: "",
+    role: "Developer",
+    image: rymeImg,
+    bio: "Automation,Ai,Robotics and engineering",
+    github: "https://github.com/Ryme-ab",
   },
 ];
 
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+    
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-        {/* Animated Background Elements */}
+      
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
           <div
@@ -61,7 +62,7 @@ const Home = () => {
           ></div>
         </div>
 
-        {/* Hero Content */}
+        
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
@@ -109,7 +110,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
+    
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
@@ -117,7 +118,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Team Section */}
       <section id="team" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
@@ -136,7 +136,7 @@ const Home = () => {
                 className="glass border-border/50 overflow-hidden group hover-lift animate-fade-in relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Floating element */}
+                
                 <div className="absolute -top-2 -right-2 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-float"></div>
 
                 <div className="relative">
@@ -201,7 +201,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50 mt-20">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
