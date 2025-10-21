@@ -1,18 +1,28 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowRight,
+  Users,
+  Code2,
+  Sparkles,
+} from "lucide-react";
+import { useEffect } from "react";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
+import islamImg from "../assets/images/islam.jpg";
 
 const teamMembers = [
   {
     id: "islam-maza",
     name: "Islam Maza",
-    role: "Full Stack Developer",
-    image: "",
-    bio: "Passionate about building scalable web applications",
-    github: "",
+    role: "AI Engineering Student",
+    image: islamImg,
+    bio: "Turning data into intelligent, scalable solutions",
+    github: "https://github.com/islammaza",
   },
   {
     id: "alia-tliba",
@@ -49,11 +59,16 @@ const teamMembers = [
 ];
 
 const Home = () => {
+  // Ensure the page is scrolled to the top when this component mounts
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
-    
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-      
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
           <div
@@ -62,7 +77,6 @@ const Home = () => {
           ></div>
         </div>
 
-        
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
@@ -110,7 +124,6 @@ const Home = () => {
           </div>
         </div>
 
-    
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
@@ -136,7 +149,6 @@ const Home = () => {
                 className="glass border-border/50 overflow-hidden group hover-lift animate-fade-in relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                
                 <div className="absolute -top-2 -right-2 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-float"></div>
 
                 <div className="relative">
