@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
 import islamImg from "../assets/images/islam.jpg";
+import aliaImage from "../assets/images/alia.jpg";
 
 const teamMembers = [
   {
@@ -27,10 +28,10 @@ const teamMembers = [
   {
     id: "alia-tliba",
     name: "Alia Tliba",
-    role: "Frontend Developer",
-    image: "",
-    bio: "Creating beautiful and intuitive user experiences",
-    github: "",
+    role: "AI Engineering Student",
+    image: aliaImage,
+    bio: "Passionate about AI and web development, creating smart and dynamic digital experiences.",
+    github: "https://github.com/aliatliba",
   },
   {
     id: "souha-bensimessaoud",

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import islamImg from "../assets/images/islam.jpg";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
+import aliaImage from "../assets/images/alia.jpg";
 
 const portfolioData = {
   "islam-maza": {
@@ -56,42 +57,56 @@ const portfolioData = {
   },
   "alia-tliba": {
     name: "Alia Tliba",
-    role: "Full Stack Developer",
-    bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    role: "AI Enginnering Student , Web & Mobile Developer",
+    bio: "Passionate software & AI engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
+    image: aliaImage ,
     skills: [
       "React.js",
       "Node.js",
-      "TypeScript",
+      "OOP",
       "Python",
-      "MongoDB",
+      "OracleDB",
       "PostgreSQL",
-      "Docker",
-      "AWS",
-      "Git",
-      "REST APIs",
+      "AI & Machine Learning",
+      "Linux",
+      "Hack The Box",
+      "Git & GitHub",
+      "Data Mining",
+      "Problem Solving",
+      "UI/UX Design",
+      "C++",
+      "PHP",
+      "Javascript",
+      ""
     ],
-    github: "",
-    email: "",
-    linkedin: "",
+    github: "https://github.com/aliatliba",
+    email: "alia.tliba@ensia.edu.dz",
+    linkedin: "https://www.linkedin.com/in/alia-tliba-110b8b30b/",
     projects: [
       {
-        title: "E-Commerce Platform",
+        title: "TrainTailor : Intelligent Workout Planner",
         description:
           "Built a full-stack AI powered workout planner and tracker .",
-        tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
+
+        tech: ["React", "Flask", "Search Strategies" , "CSP solution" , "Python"],
+        
+
       },
       {
-        title: "Task Management App",
+        title: "Medicosphere : Private Clinic Management Website",
         description:
           "Built a full-stack website for managing appointments and save patients records.",
-        tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven", "PHP"],
+
+        tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven" , "PHP"],
+
+       
+
       },
       {
-        title: "Weather Dashboard",
+        title: "RecipeHub : a UI/UX Design for recipe & tips sharing Website",
         description:
-          "Interactive weather forecasting application with data visualization",
-        tech: ["React", "Chart.js", "OpenWeather API"],
+          "Interactive UI/UX Design & Prototype for recipe & kitchen tips sharing website.",
+        tech: ["UI/UX", "Figma"],
       },
     ],
   },
