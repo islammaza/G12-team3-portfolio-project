@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
-import SouhaImage from "../assets/images/souha.jpg";
-import rymeImg from "../assets/images/ryme.png";
-import slsImg from "../assets/images/salsabil.png";
-import AliaImage from "../assets/images/alia.jpg";
 import {
   Github,
   Linkedin,
@@ -15,11 +10,12 @@ import {
   Code2,
   Sparkles,
 } from "lucide-react";
-import { useEffect } from "react";
+import SouhaImage from "../assets/images/souha.jpg";
 import rymeImg from "../assets/images/ryme.png";
 import slsImg from "../assets/images/salsabil.png";
 import islamImg from "../assets/images/islam.jpg";
 import aliaImage from "../assets/images/alia.jpg";
+import { useEffect } from "react";
 
 const teamMembers = [
   {

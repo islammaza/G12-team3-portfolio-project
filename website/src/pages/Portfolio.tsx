@@ -61,7 +61,7 @@ const portfolioData = {
     name: "Alia Tliba",
     role: "AI Enginnering Student , Web & Mobile Developer",
     bio: "Passionate software & AI engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: aliaImage ,
+    image: aliaImage,
     skills: [
       "React.js",
       "Node.js",
@@ -89,19 +89,14 @@ const portfolioData = {
         description:
           "Built a full-stack AI powered workout planner and tracker .",
 
-        tech: ["React", "Flask", "Search Strategies" , "CSP solution" , "Python"],
-        
-
+        tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
       },
       {
         title: "Medicosphere : Private Clinic Management Website",
         description:
           "Built a full-stack website for managing appointments and save patients records.",
 
-        tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven" , "PHP"],
-
-       
-
+        tech: ["React.js", "MySQL", "Tailwind CSS", "Aiven", "PHP"],
       },
       {
         title: "RecipeHub : a UI/UX Design for recipe & tips sharing Website",
@@ -146,19 +141,19 @@ const portfolioData = {
         title: "VisiFun – Smart Web Application for Jardin d’Essai'",
         description:
           "Built a responsive website to provide unguided visitors with plant information via interactive maps, gamified quizzes, and AI-based plant search, improving visitor experience by 30%.",
-        tech: ["React", "Node.js","MySQL", "Leaflet.js","Flask", "Figma"],
+        tech: ["React", "Node.js", "MySQL", "Leaflet.js", "Flask", "Figma"],
       },
       {
         title: "TrainTailor : Intelligent Workout Planner",
         description:
           "Built a full-stack AI powered workout planner and tracker .",
-        tech: ["React", "Flask", "Search Strategies" , "CSP solution" , "Python"],
+        tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
       },
       {
         title: "Wadhifni – Career Guidance Platform",
         description:
           "an online platform that connects job seekers with employers. It allows companies to post job offers, and candidates to search, apply, and communicate directly with employers.",
-        tech: ["HTML", "JavaScript", "CSS" ,"PHP"],
+        tech: ["HTML", "JavaScript", "CSS", "PHP"],
       },
     ],
   },
@@ -341,19 +336,21 @@ const Portfolio = () => {
                     <Github className="h-5 w-5" />
                   </Button>
                 </a>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="glass hover-lift"
+                {member.linkedin && member.linkedin.trim() !== "" && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Linkedin className="h-5 w-5" />
-                  </Button>
-                </a>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="glass hover-lift"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </Button>
+                  </a>
+                )}
                 <a href={`mailto:${member.email}`}>
                   <Button
                     variant="outline"
