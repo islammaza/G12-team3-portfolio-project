@@ -108,7 +108,7 @@ const portfolioData = {
   },
   "souha-bensimessaoud": {
     name: "Souha Bensimessaoud",
-    role: "Full Stack Developer",
+    role: "AI Engineering Student",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
     image: SouhaImage,
     skills: [
@@ -159,7 +159,7 @@ const portfolioData = {
   },
   "salsabil-laib": {
     name: "Salsabil Laib",
-    role: "3rd year AI Student",
+    role: "AI Engineering Student",
     bio: "AI and Mathematics student with a deep interest in algorithms, data-driven decision making, and intelligent system design. Constantly exploring how math can power real-world AI innovation.",
     image: slsImg,
     skills: [
@@ -201,7 +201,7 @@ const portfolioData = {
   },
   "ryme-ait-belkacem": {
     name: "Ryme Ait Belkacem",
-    role: " 3rd year AI Student",
+    role: "AI Engineering Student",
     bio: "Passionate of AI , development ,robotics. Fun of creating intelligent systems that connect technology and real-world applications, and I am always exploring new ways to learn, build, and solve challenges through code and automation",
     image: rymeImg,
 

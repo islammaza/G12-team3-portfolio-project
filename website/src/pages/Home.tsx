@@ -45,7 +45,7 @@ const teamMembers = [
   {
     id: "salsabil-laib",
     name: "Salsabil Laib",
-    role: "Developer and  Designer",
+    role: "AI Engineering Student",
     image: slsImg,
     bio: "Fun of coding, designing,mathematics and problem-solving",
     github: "https://github.com/Salsabillaib",
@@ -53,7 +53,7 @@ const teamMembers = [
   {
     id: "ryme-ait-belkacem",
     name: "Ryme Ait Belkacem",
-    role: "Developer",
+    role: "AI Engineering Student",
     image: rymeImg,
     bio: "Automation,Ai,Robotics and engineering",
     github: "https://github.com/Ryme-ab",
