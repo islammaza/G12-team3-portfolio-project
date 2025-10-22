@@ -77,7 +77,6 @@ const portfolioData = {
       "C++",
       "PHP",
       "Javascript",
-      ""
     ],
     github: "https://github.com/aliatliba",
     email: "alia.tliba@ensia.edu.dz",
