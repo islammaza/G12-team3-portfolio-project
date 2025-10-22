@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
-
+import slsImg from "../assets/images/salsabil.png";
 // Team members data - add more members here
 const teamMembers = [
   {
@@ -33,7 +33,7 @@ const teamMembers = [
     id: "salsabil-laib",
     name: "Salsabil Laib",
     role: "Developer and  Designer",
-    image: "",
+    image: slsImg,
     bio: "Fun of coding, designing,mathematics and problem-solving",
     github: "https://github.com/Salsabillaib",
   },

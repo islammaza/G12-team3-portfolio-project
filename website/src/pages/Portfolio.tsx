@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Github, Mail, Linkedin, ArrowLeft, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
+import slsImg from "../assets/images/salsabil.png";
 // This is the template portfolio page with dummy data
 const portfolioData = {
   "islam-maza": {
@@ -132,7 +132,7 @@ const portfolioData = {
     name: "Salsabil Laib",
     role: "3rd year AI Student",
     bio: "AI and Mathematics student with a deep interest in algorithms, data-driven decision making, and intelligent system design. Constantly exploring how math can power real-world AI innovation.",
-    image: "",
+    image: slsImg,
     skills: [
       "React",
       "flutter",
