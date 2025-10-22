@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Github, Mail, Linkedin, ArrowLeft, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import SouhaImage from "../assets/images/souha.jpg";
+import AliaImage from "../assets/images/alia.jpg";
 import { useEffect } from "react";
 import islamImg from "../assets/images/islam.jpg";
 import rymeImg from "../assets/images/ryme.png";
@@ -113,40 +115,50 @@ const portfolioData = {
     name: "Souha Bensimessaoud",
     role: "Full Stack Developer",
     bio: "Passionate software engineer with expertise in building scalable web applications. I love turning complex problems into elegant solutions and continuously learning new technologies.",
-    image: "",
+    image: SouhaImage,
     skills: [
       "React.js",
       "Node.js",
       "TypeScript",
+      "Flask",
+      "C++",
       "Python",
-      "MongoDB",
+      "OracleDB",
       "PostgreSQL",
-      "Docker",
-      "AWS",
-      "Git",
-      "REST APIs",
+      "MySQL",
+      "AI & Machine Learning",
+      "Linux",
+      "Capture The Flag",
+      "Hack The Box",
+      "Git & GitHub",
+      "Data Mining",
+      "Communication",
+      "Leadership",
+      "Problem Solving",
+      "UI/UX Design",
+      "OOP",
     ],
-    github: "",
-    email: "",
-    linkedin: "",
+    github: "https://github.com/bensimessaoudsouha",
+    email: "souha.bensimessaoud@ensia.edu.dz",
+    linkedin: "https://www.linkedin.com/in/souha-bensimessaoud-5bb256320/",
     projects: [
       {
-        title: "E-Commerce Platform",
+        title: "VisiFun – Smart Web Application for Jardin d’Essai'",
         description:
           "Built a responsive website to provide unguided visitors with plant information via interactive maps, gamified quizzes, and AI-based plant search, improving visitor experience by 30%.",
-        tech: ["React", "Node.js", "MySQL", "Leaflet.js", "Flask", "Figma"],
+        tech: ["React", "Node.js","MySQL", "Leaflet.js","Flask", "Figma"],
       },
       {
-        title: "Task Management App",
+        title: "TrainTailor : Intelligent Workout Planner",
         description:
           "Built a full-stack AI powered workout planner and tracker .",
-        tech: ["React", "Flask", "Search Strategies", "CSP solution", "Python"],
+        tech: ["React", "Flask", "Search Strategies" , "CSP solution" , "Python"],
       },
       {
-        title: "Weather Dashboard",
+        title: "Wadhifni – Career Guidance Platform",
         description:
           "an online platform that connects job seekers with employers. It allows companies to post job offers, and candidates to search, apply, and communicate directly with employers.",
-        tech: ["HTML", "JavaScript", "CSS", "PHP"],
+        tech: ["HTML", "JavaScript", "CSS" ,"PHP"],
       },
     ],
   },

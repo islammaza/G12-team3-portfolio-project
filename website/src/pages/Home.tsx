@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
+import SouhaImage from "../assets/images/souha.jpg";
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
+import AliaImage from "../assets/images/alia.jpg";
 import {
   Github,
   Linkedin,
@@ -36,10 +41,10 @@ const teamMembers = [
   {
     id: "souha-bensimessaoud",
     name: "Souha Bensimessaoud",
-    role: "Backend Developer",
-    image: "",
-    bio: "Building robust and efficient backend systems",
-    github: "",
+    role: "AI Engineering Student",
+    image: SouhaImage,
+    bio: "I'm a third-year Artificial Intelligence student at -ENSIA-",
+    github: "https://github.com/bensimessaoudsouha",
   },
   {
     id: "salsabil-laib",
