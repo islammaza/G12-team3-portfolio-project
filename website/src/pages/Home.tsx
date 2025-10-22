@@ -1,23 +1,35 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, ArrowRight, Users, Code2, Sparkles } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowRight,
+  Users,
+  Code2,
+  Sparkles,
+} from "lucide-react";
+import { useEffect } from "react";
+import rymeImg from "../assets/images/ryme.png";
+import slsImg from "../assets/images/salsabil.png";
+import islamImg from "../assets/images/islam.jpg";
+import aliaImage from "../assets/images/alia.jpg";
 
-// Team members data - add more members here
 const teamMembers = [
   {
     id: "islam-maza",
     name: "Islam Maza",
-    role: "Full Stack Developer",
-    image: "",
-    bio: "Passionate about building scalable web applications",
-    github: "",
+    role: "AI Engineering Student",
+    image: islamImg,
+    bio: "Turning data into intelligent, scalable solutions",
+    github: "https://github.com/islammaza",
   },
   {
     id: "alia-tliba",
     name: "Alia Tliba",
     role: "AI Engineering Student",
-    image: "",
+    image: aliaImage,
     bio: "Passionate about AI and web development, creating smart and dynamic digital experiences.",
     github: "https://github.com/aliatliba",
   },
@@ -33,59 +45,78 @@ const teamMembers = [
     id: "salsabil-laib",
     name: "Salsabil Laib",
     role: "UI/UX Designer",
-    image: "",
+    image: slsImg,
     bio: "Designing delightful digital experiences",
     github: "",
   },
   {
     id: "ryme-ait-belkacem",
     name: "Ryme Ait Belkacem",
-    role: "DevOps Engineer",
-    image: "",
-    bio: "Automating and optimizing deployment pipelines",
-    github: "",
+    role: "Developer",
+    image: rymeImg,
+    bio: "Automation,Ai,Robotics and engineering",
+    github: "https://github.com/Ryme-ab",
   },
 ];
 
 const Home = () => {
+  // Ensure the page is scrolled to the top when this component mounts
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-        {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+          <div
+            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "1s" }}
+          ></div>
         </div>
 
-        {/* Hero Content */}
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
               <Sparkles className="h-4 w-4 text-secondary" />
               <span className="text-sm font-medium">Welcome to Our Team</span>
             </div>
-            
+
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
               <span className="gradient-text">Innovative</span>
               <br />
               <span className="text-foreground">Developers</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We are a passionate team of developers dedicated to creating exceptional digital experiences
-              and innovative solutions that make a difference.
+              We are a passionate team of developers dedicated to creating
+              exceptional digital experiences and innovative solutions that make
+              a difference.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 pt-8">
               <a href="#team">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-lg hover-lift">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-lg hover-lift"
+                >
                   Meet the Team
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="glass text-lg px-8 py-6 rounded-full hover-lift">
+              <a
+                href="https://github.com/islammaza/G12-team3-portfolio-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="glass text-lg px-8 py-6 rounded-full hover-lift"
+                >
                   <Github className="mr-2 h-5 w-5" />
                   View GitHub
                 </Button>
@@ -94,7 +125,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
@@ -102,7 +132,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Team Section */}
       <section id="team" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
@@ -121,9 +150,8 @@ const Home = () => {
                 className="glass border-border/50 overflow-hidden group hover-lift animate-fade-in relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Floating element */}
                 <div className="absolute -top-2 -right-2 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-float"></div>
-                
+
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent z-10"></div>
                   <img
@@ -132,24 +160,48 @@ const Home = () => {
                     className="w-full aspect-square object-cover transition-transform duration-500"
                   />
                 </div>
-                
+
                 <div className="p-4 space-y-3">
                   <div>
-                    <h3 className="text-lg font-bold mb-1">{member.name}</h3>
-                    <p className="text-secondary font-semibold text-sm">{member.role}</p>
+                    <h3
+                      className={`font-bold mb-1 ${
+                        member.name.length > 20 ? "text-xs" : "text-base"
+                      } whitespace-nowrap`}
+                      title={member.name}
+                    >
+                      {member.name}
+                    </h3>
+                    <p className="text-secondary font-semibold text-sm">
+                      {member.role}
+                    </p>
                   </div>
-                  
-                  <p className="text-muted-foreground text-xs line-clamp-2">{member.bio}</p>
+
+                  <p className="text-muted-foreground text-xs line-clamp-2">
+                    {member.bio}
+                  </p>
 
                   <div className="flex flex-col gap-2 pt-2">
                     <Link to={`/portfolio/${member.id}`} className="w-full">
-                      <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 w-full">
+                      <Button
+                        variant="default"
+                        size="sm"
+                        className="bg-primary hover:bg-primary/90 w-full"
+                      >
                         Portfolio
                         <ArrowRight className="ml-2 h-3 w-3" />
                       </Button>
                     </Link>
-                    <a href={member.github} target="_blank" rel="noopener noreferrer" className="w-full">
-                      <Button variant="outline" size="sm" className="glass w-full">
+                    <a
+                      href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
+                    >
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="glass w-full"
+                      >
                         <Github className="h-3 w-3 mr-2" />
                         GitHub
                       </Button>
@@ -162,29 +214,42 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50 mt-20">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold gradient-text mb-2">Our Team</h3>
-              <p className="text-muted-foreground">Building the future, one line of code at a time</p>
+              <p className="text-muted-foreground">
+                Building the future, one line of code at a time
+              </p>
             </div>
-            
+
             <div className="flex gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon" className="glass hover-lift">
+              <a
+                href="https://github.com/islammaza/G12-team3-portfolio-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="glass hover-lift"
+                >
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
-              <a href="mailto:team@example.com">
-                <Button variant="outline" size="icon" className="glass hover-lift">
+              <a href="mailto:islam.maza@ensia.edu.dz.com">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="glass hover-lift"
+                >
                   <Mail className="h-5 w-5" />
                 </Button>
               </a>
             </div>
           </div>
-          
+
           <div className="text-center mt-8 pt-8 border-t border-border/50">
             <p className="text-sm text-muted-foreground">
               © 2025 Team Portfolio. All rights reserved.
