@@ -10,6 +10,13 @@ const REPO_NAME = process.env.REPO_NAME || "G12-team3-portfolio-project";
 export default defineConfig(({ mode }) => ({
   // base will be used as the base path when building the project for production
   base: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : `./`,
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
   server: {
     host: "::",
     port: 8080,
