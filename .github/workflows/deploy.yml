@@ -32,6 +32,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: website
+        env:
+          NODE_ENV: production
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
