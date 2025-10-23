@@ -1,9 +1,9 @@
-name: Deploy Website to GitHub Pages
+name: Deploy Vite React app to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]   # or develop if you deploy from that
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,34 +17,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website   # where your app lives
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
-        working-directory: ./website
-        run: npm install
+        run: npm ci
 
-      - name: Build the project
-        working-directory: ./website
+      - name: Build project
         run: npm run build
 
-      - name: Upload production files
+      - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./website
+          path: website/dist
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
