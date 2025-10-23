@@ -4,7 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+// When deploying to GitHub Pages, set `REPO_NAME` to your repository name (no leading slash).
+const REPO_NAME = process.env.REPO_NAME || "G12-team3-portfolio-project";
+
 export default defineConfig(({ mode }) => ({
+  // base will be used as the base path when building the project for production
+  base: `/${REPO_NAME}/`,
   server: {
     host: "::",
     port: 8080,
