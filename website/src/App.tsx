@@ -8,7 +8,6 @@ import NotFound from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { Sonner } from "@/components/ui/sonner";
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -16,7 +15,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* ✅ Added basename for GitHub Pages */}
+      <BrowserRouter basename="/G12-team3-portfolio-project">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio/:memberId" element={<Portfolio />} />
